@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Log in | SHB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #fff;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        :root {
+            --bs-border-width: 3px;
+            --bs-border-color: #000103;
+        }
+
+        .center-box {
+            max-width: 550px;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 4px 18px #0002;
+            padding: 35px 70px 30px;
+            border: 4px solid #111;
+        }
+
+        .login-title {
+            text-align: center;
+            font-weight:700;
+            font-size: 2.5rem;
+            margin-bottom: 24px;
+        }
+
+        .log-btn {
+            background: #111;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 1.15rem;
+            padding: 10px;
+        }
+
+        .log-btn:hover {
+            background: #2d2d2d;
+        }
+
+        .social-btns .btn {
+            width: 53px;
+            height: 53px;
+            border-radius: 50%;
+            font-size: 1.5em;
+            margin-right: 16px;
+        }
+
+        .social-btns .btn:last-child {
+            margin-right: 0;
+        }
+
+        .google {
+            background: #de5246;
+            color: #fff;
+        }
+
+        .facebook {
+            background: #2d4373;
+            color: #fff;
+        }
+
+        .apple {
+            background: #1a1a1a;
+            color: #fff;
+        }
+
+        .logo-img {
+            width: 124px;
+            display: block;
+            margin: 20px auto 7px;
+        }
+    </style>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div>
+        <img class="logo-img" src="./Assets/Images/SkillHubBengal LOGO.png" alt="SHB Logo" />
+        <div class="center-box">
+            <div class="login-title">Log in</div>
+            <form>
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">Username</label>
+                    <input type="text" class="form-control" placeholder="Enter your Email or Username" required>
+                </div>
+                <div class="mb-2">
+                    <label class="form-label fw-semibold">Password</label>
+                    <input type="password" class="form-control" placeholder="Enter your password" required>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-3" style="font-size:0.98em;">
+                    <a href="signup.html" style="text-decoration:underline; color:#000103;">Sign up for free</a>
+                    <a href="#" style="text-decoration:underline; color:#000103;">Forgot Password?</a>
+                </div>
+                <button type="submit" class="w-100 log-btn mb-3">LOG IN</button>
+            </form>
+            <div class="text-center mt-2">
+                <div class="d-flex justify-content-center align-items-center mt-2 social-btns">
+                    <button class="btn google me-2" aria-label="Login with Google"><i
+                            class="fab fa-google"></i></button>
+                    <button class="btn facebook me-2" aria-label="Login with Facebook"><i
+                            class="fab fa-facebook-f"></i></button>
+                    <button class="btn apple" aria-label="Login with Apple"><i class="fab fa-apple"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

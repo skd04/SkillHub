@@ -1,0 +1,301 @@
+/* Navbar options adjustment */
+.navbar-nav {
+  align-items: center;
+  gap: 4.5rem;
+}
+.navbar-nav .nav-link {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0a0a4a !important;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  transition: color 0.2s;
+}
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+  color: #18183a !important;
+}
+
+/* Custom Login Anchor as Button */
+.nav-login-link {
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0a0a4a !important;
+  background: #fff;
+  border: 2px solid #0a0a4a;
+  border-radius: 12px;
+  padding: 0.6rem 2.5rem;
+  margin-left: 4.5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: none;
+}
+.nav-login-link:hover, .nav-login-link:focus {
+  background: #0a0a4a;
+  color: #fff !important;
+  text-decoration: none;
+  box-shadow: 0 2px 12px rgba(10,10,74,0.10);
+}
+/* Navbar logo size adjustment */
+.navbar-brand img {
+  width: 120px !important;
+  height: 110px !important;
+  object-fit: contain;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+.navbar {
+  min-height: 120px;
+  align-items: center;
+}
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #f8f9fa;
+}
+
+
+.hero-section {
+  background: #0a0a4a;
+  color: #fff;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  overflow: hidden;
+  position: relative;
+  min-height: 370px;
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+.hero-section .row {
+  min-height: 280px;
+  align-items: center;
+}
+
+.hero-section .col-lg-7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.hero-section .col-lg-5 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+}
+.hero-section .hero-boy-img {
+  max-width: 520px;
+  width: 520px;
+  min-width: 320px;
+  z-index: 2;
+  position: relative;
+  margin-right: 0;
+  margin-left: 0;
+  box-shadow: 0 8px 32px rgba(10,10,74,0.10);
+  right: -150px;
+  top: 60px;
+}
+.hero-section .circle-design {
+  position: absolute;
+  right: -150px;
+  top: 0;
+  width: 650px;
+  z-index: 1;
+  opacity: 0.95;
+  pointer-events: none;
+}
+.hero-section h1.display-4 {
+  font-size: 5.2rem;
+  font-weight: 900;
+  line-height: 1.08;
+  margin-bottom: 1.5rem;
+  letter-spacing: -2px;
+}
+.hero-section p.lead {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  font-weight: 500;
+}
+.hero-section .mt-4.d-flex.gap-3 {
+  gap: 1.5rem !important;
+}
+.hero-section .btn {
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding: 0.85rem 2.5rem;
+  border-radius: 18px;
+  min-width: 170px;
+}
+.hero-section .mt-5.d-flex.gap-4.align-items-center {
+  margin-top: 2.5rem !important;
+  gap: 2.2rem !important;
+}
+.hero-section .mt-5 img {
+  height: 80px !important;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 8px rgba(10,10,74,0.10));
+}
+
+.course-card {
+  border-radius: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.course-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(10,10,74,0.12);
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  z-index: 1000;
+  transition: background 0.2s;
+}
+.whatsapp-float:hover {
+  background: #128c7e;
+  color: #fff;
+}
+
+.review-box {
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(10,10,74,0.06);
+}
+
+.footer-section {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background: #18183a;
+}
+
+@media (max-width: 1200px) {
+  .hero-section .circle-design {
+    width: 320px;
+    right: -20px;
+    top: 20px;
+  }
+  .hero-section .hero-boy-img {
+    max-width: 220px;
+    width: 220px;
+    right: 0;
+    top: 0;
+  }
+  .hero-section h1.display-4 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    gap: 1.2rem;
+  }
+  .nav-login-link {
+    margin-left: 1.2rem;
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+  }
+  .navbar-brand img {
+    width: 70px !important;
+    height: 60px !important;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .hero-section .hero-boy-img {
+    max-width: 120px;
+    width: 120px;
+    right: 0;
+    top: 0;
+  }
+  .hero-section .circle-design {
+    width: 90px;
+    top: 30px;
+    right: 0;
+  }
+  .hero-section .col-lg-7, .hero-section .col-lg-5 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .hero-section h1.display-4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .hero-section p.lead {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+  }
+  .hero-section .btn {
+    font-size: 1rem;
+    padding: 0.5rem 1.2rem;
+    min-width: 100px;
+    border-radius: 10px;
+  }
+  .hero-section .mt-5 img {
+    height: 36px !important;
+  }
+  .course-card {
+    margin-bottom: 1.2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-section {
+    border-radius: 0;
+    padding-bottom: 1rem;
+    min-height: 220px;
+  }
+  .footer-section {
+    border-radius: 0;
+  }
+  .whatsapp-float {
+    width: 44px;
+    height: 44px;
+    font-size: 1.5rem;
+    bottom: 16px;
+    right: 16px;
+  }
+  .carousel-inner .row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .carousel-inner .col-12,
+  .carousel-inner .col-sm-6,
+  .carousel-inner .col-md-4,
+  .carousel-inner .col-lg-3 {
+    min-width: 80vw;
+    max-width: 90vw;
+    flex: 0 0 auto;
+  }
+  .course-card {
+    margin-bottom: 1.2rem;
+  }
+}
